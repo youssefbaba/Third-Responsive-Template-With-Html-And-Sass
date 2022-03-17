@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Profil Page</title>
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Main StyleSheet  -->
+    <link rel="stylesheet" href="css/create-profile.css">
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header>
+        <nav class="navbar bg-dark text-center">
+            <h1>
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-code"></i>
+                    DevConnector
+                </a>
+            </h1>
+            <ul>
+                <li><a href="profiles.html">Developers</a></li>
+                <li><a href="posts.html">Posts</a></li>
+                <li>
+                    <a href="dashboard.html">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="hide-sm">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span class="hide-sm">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- End Header -->
+    <!-- Start Create Profile  -->
+    <div class="create-profile">
+        <div class="container">
+            <h2 class="large text-primary">Create Your Profile</h2>
+            <p class="lead">
+                <i class="fa-solid fa-user"></i> Let's get some information to make your profile stand out
+            </p>
+            <form action="" class="form">
+                <div class="form-group">
+                    <small class="form-text">* = required fields</small>
+                </div>
+                <div class="form-group">
+                    <select name="status" required>
+                        <option value="0">* Select Professional Status</option>
+                        <option value="Developer">Developer</option>
+                        <option value="Junior Developer">Junior Developer</option>
+                        <option value="Senior Developer">Senior Developer</option>
+                        <option value="Manager">Manager</option>
+                        <option value="Student or Learning">Student or Learning</option>
+                        <option value="Instructor">Instructor or Teacher</option>
+                        <option value="Intern">Intern</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <small class="form-text">Give us an idea of where you are at in your career</small>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="company" placeholder="Company">
+                    <small class="form-text">Could be your own company or one you work for</small>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="website" placeholder="Website">
+                    <small class="form-text">Could be your own or a company website</small>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="location" placeholder="Location">
+                    <small class="form-text">City & state suggested (eg. Boston, MA)</small>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="skills" placeholder="* Skills" required>
+                    <small class="form-text">Please use comma separated values (eg. HTML,CSS,JavaScript,PHP)</small>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="github" placeholder="Github Username">
+                    <small class="form-text">
+                        If you want your latest repos and a Github link, include your username
+                    </small>
+                </div>
+                <div class="form-group">
+                    <textarea name="bio" placeholder="A short bio of yourself"></textarea>
+                    <small class="form-text">Tell us a little about yourself</small>
+                </div>
+                <div class="my-2">
+                    <button class="btn btn-light">Add Social Network Links </button>
+                    <span>Optional</span>
+                </div>
+                <div class="social-network-links">
+                    <div class="form-group input-social">
+                        <i class="fa-brands fa-twitter fa-2x"></i>
+                        <input type="text" name="twitter" placeholder="Twitter Url">
+                    </div>
+                    <div class="form-group input-social">
+                        <i class="fa-brands fa-facebook-square fa-2x"></i>
+                        <input type="text" name="facebook" placeholder="Facebook Url">
+                    </div>
+                    <div class="form-group input-social">
+                        <i class="fa-brands fa-youtube fa-2x"></i>
+                        <input type="text" name="youtube" placeholder="Youtube Url">
+                    </div>
+                    <div class="form-group input-social">
+                        <i class="fa-brands fa-linkedin fa-2x"></i>
+                        <input type="text" name="linkedin" placeholder="Linkedin Url">
+                    </div>
+                    <div class="form-group input-social">
+                        <i class="fa-brands fa-instagram fa-2x"></i>
+                        <input type="text" name="instagram" placeholder="Instagram Url">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Submit" class="btn btn-primary my-1">
+                    <a href="dashboard.html" class="btn btn-light my-1">Go Back</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- End Create Profile  -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

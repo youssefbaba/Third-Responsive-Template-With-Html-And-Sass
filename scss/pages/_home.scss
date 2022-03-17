@@ -1,0 +1,30 @@
+/* Start Home Page */
+
+/* Start Section Landing */
+// .landing
+.landing {
+    position: relative;
+    height: 100vh;
+
+    background: {
+        image: url(../../images/landing.jpg);
+        repeat: no-repeat;
+        position: center center;
+        size: cover;
+    }
+
+    // .landing .landing-inner
+    .landing-inner {
+        color: $white-color;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+}
+
+/* End Section Landing */
+
+/* End  Home Page */

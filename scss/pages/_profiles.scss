@@ -1,0 +1,65 @@
+/*  Start Profiles  */
+
+// .profiles
+.profiles {
+
+    // .profiles .profiles-item
+    #{&}-item {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem;
+
+        @include minsmall {
+            grid-template-columns: repeat(12, 1fr);
+        }
+
+        // .profiles .profiles-item .image
+        .image {
+            @include minsmall {
+                grid-column: 1 / span 3;
+                text-align: left;
+            }
+
+            img {
+                width: 200px;
+
+                @include minsmall {
+                    width: 100%;
+                }
+            }
+        }
+
+        // .profiles .profiles-item .info
+        .info {
+            @include minsmall {
+                grid-column: 4 / span 6;
+                text-align: left;
+            }
+        }
+
+        // .profiles .profiles-item .skills
+        .skills {
+            display: none;
+
+            @include minsmall {
+                display: block;
+                grid-column: 10 / span 3;
+            }
+
+            // .profiles .profiles-item .skills i
+            i {
+                margin-right: 0.3rem;
+            }
+        }
+
+        // .profiles .profiles-item:not(:last-child) 
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+
+/*  End  Profiles  */

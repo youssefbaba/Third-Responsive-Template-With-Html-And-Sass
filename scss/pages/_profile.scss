@@ -1,0 +1,115 @@
+/* Start Profile */
+
+// .profile
+.profile {
+
+    // .profile .profile-grid
+    #{&}-grid {
+        display: grid;
+        grid-template-areas:
+            "top"
+            "about-skills"
+            "exprience"
+            "education"
+            "github-repos";
+
+        @include minsmall {
+            grid-template-areas: "top top"
+                "about-skills about-skills"
+                "exprience education"
+                "github-repos github-repos";
+        }
+
+        gap: 1rem;
+    }
+
+    // .profile .profile-top
+    #{&}-top {
+        grid-area: top;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        // .profile .profile-top .social
+        .social {
+
+            // .profile .profile-top .social a
+            a {
+                margin: 0 0.3rem;
+                @include transition(color 0.5s);
+
+                // .profile .profile-top .social a:hover
+                &:hover {
+                    color: setTextColor($white-color);
+                }
+            }
+        }
+    }
+
+    // .profile .profile-about
+    #{&}-about-skills {
+        grid-area: about-skills;
+
+        // .profile .profile-about-skills .skills
+        .skills {
+
+            // .profile .profile-about-skills .skills-list
+            &-list {
+                @include minsmall {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                i {
+                    margin-right: 0.3rem;
+                }
+            }
+        }
+    }
+
+    // .profile .profile-experience
+    #{&}-exprience {
+        grid-area: exprience;
+    }
+
+    // .profile .profile-education
+    #{&}-education {
+        grid-area: education;
+    }
+
+    #{&}-exprience,
+    #{&}-education {
+        p {
+            margin: 0.5rem 0;
+        }
+    }
+
+    // .profile .profile-github-repos
+    #{&}-github-repos {
+        grid-area: github-repos;
+
+        .repo {
+            display: flex;
+
+            >div:first-child {
+                flex: 7;
+                flex-basis: 70%;
+            }
+
+            >div:last-child {
+                flex: 3;
+                flex-basis: 30%;
+
+                li {
+                    margin: 0.3rem 0;
+                }
+            }
+        }
+
+    }
+
+}
+
+/* End Profile */

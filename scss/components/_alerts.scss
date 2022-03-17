@@ -1,0 +1,31 @@
+/* Start Alert */
+
+.alert {
+    padding: 0.8rem;
+    margin: 1rem 0;
+    @include opacity(0.9);
+    background-color: $light-color;
+    color: $black-color;
+
+    // .alert-primary
+    &-primary {
+        @include setBackgroundColor($primary-color)
+    }
+
+    // .alert-danger
+    &-danger {
+        @include setBackgroundColor($danger-color);
+    }
+
+    // .alert-success
+    &-success {
+        @include setBackgroundColor($success-color)
+    }
+
+    // .alert-dark
+    &-dark {
+        @include setBackgroundColor($dark-color)
+    }
+}
+
+/* End Alert */

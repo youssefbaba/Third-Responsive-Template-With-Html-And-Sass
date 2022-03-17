@@ -1,0 +1,43 @@
+/* Start Dashboard */
+.dashboard {
+    .dash-buttons {
+        .btn {
+            display: block;
+            width: 100%;
+
+            @include minsmall {
+                display: inline-block;
+                width: auto;
+            }
+
+            &:not(:last-of-type) {
+                margin-bottom: 0.2rem;
+
+                @include minsmall {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .table {
+        width: 100%;
+
+        @include minsmall {
+            width: auto;
+        }
+
+        tr {
+            td:last-child {
+                text-align: right;
+            }
+        }
+
+        th,
+        td {
+            padding: 1rem;
+        }
+    }
+}
+
+/* End Dashboard */

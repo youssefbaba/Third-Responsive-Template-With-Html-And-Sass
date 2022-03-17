@@ -1,0 +1,50 @@
+/* Start Header */
+header {
+
+    // header .navbar
+    .navbar {
+        padding: 0.7rem 2rem;
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+        top: 0;
+        border-bottom: 1px solid $primary-color;
+        @include opacity(0.9);
+
+        @include minsmall {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+        }
+
+        h1 {
+            margin-bottom: 1rem;
+
+            @include minsmall {
+                margin-bottom: 0;
+            }
+        }
+
+        // header .navbar ul
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        // header .navbar a
+        a {
+            color: $white-color;
+            padding: 0.45rem 0.7rem;
+            @include transition(color 0.5s);
+
+            // header .navbar a:hover
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+/* End Header */

@@ -1,0 +1,11 @@
+// Function  Set Text Color Based On Background Color
+@function setTextColor($color) {
+    @if (lightness($color) > 60) {
+        @return $black-color;
+    }
+
+    @else {
+        @return $white-color;
+    }
+
+}

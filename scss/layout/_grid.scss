@@ -1,0 +1,25 @@
+// Start Container
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    margin: auto {
+        top: 8rem;
+        bottom: 3rem;
+    }
+
+    @include minsmall {
+        width: 720px;
+        margin-top: 6rem;
+    }
+
+    @include minmedium {
+        width: 960px;
+    }
+
+    @include minlarg {
+        width: 1140px;
+    }
+}
+
+// End Container

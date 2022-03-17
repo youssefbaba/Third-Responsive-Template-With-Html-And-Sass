@@ -1,0 +1,26 @@
+// Import Variables
+@import '../scss/helpers/variables';
+// Import Functions
+@import '../scss/helpers/functions';
+// Import Mixins
+@import "../scss/helpers/mixins";
+
+
+// Import Normalize
+@import '../scss/base/normalize';
+// Import base
+@import '../scss/base/bases';
+
+
+// Import Grids
+@import '../scss/layout/grid';
+// Import Header
+@import '../scss/layout/header';
+
+
+// Import Buttons
+@import '../scss/components/buttons';
+
+
+// Import Home page
+@import '../scss/pages/home';

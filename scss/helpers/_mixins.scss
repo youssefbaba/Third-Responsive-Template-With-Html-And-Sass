@@ -1,0 +1,62 @@
+// Mixin  Opacity
+@mixin opacity($value) {
+    $opacity-ei: $value*100;
+    filter: alpha(opacity=$opacity-ei);
+    opacity: $value;
+}
+
+// Mixin Transition
+@mixin transition($values) {
+    -webkit-transition: $values;
+    -moz-transition: $values;
+    -ms-transition: $values;
+    -o-transition: $values;
+    transition: $values;
+}
+
+// Set Background Color 
+@mixin setBackgroundColor($color) {
+    background-color: $color;
+    color: setTextColor($color);
+}
+
+// Mixin Media Queries
+
+// Mobile Device
+@mixin maxMobile {
+    @media #{$max-mobile} {
+        @content ;
+    }
+}
+
+// Small Device 
+@mixin minsmall {
+    @media #{$min-small} {
+        @content ;
+    }
+}
+
+// Medium Device 
+@mixin minmedium {
+    @media #{$min-medium} {
+        @content ;
+    }
+}
+
+// Large Device 
+@mixin minlarg {
+    @media #{$min-large} {
+        @content ;
+    }
+}
+
+// Mixin overlay
+@mixin overlay($color) {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color, 0.7);
+}

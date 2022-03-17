@@ -1,0 +1,38 @@
+/* Start  Form */
+.form {
+
+    // .form .form-group
+    #{&}-group {
+        margin: 1.2rem 0;
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        textarea,
+        select {
+            display: block;
+            width: 100%;
+            padding: 0.4rem;
+            font-size: 1.2rem;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            line-height: 1.6;
+        }
+
+        textarea {
+            height: 8rem;
+        }
+
+        // .form .form-text
+        #{&}-text {
+            display: block;
+            color: #888;
+            margin: 0.3rem 0;
+        }
+    }
+}
+
+/* End Form */
