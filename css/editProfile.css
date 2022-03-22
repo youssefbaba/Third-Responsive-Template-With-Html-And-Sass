@@ -275,19 +275,28 @@ button .input[type="submit"] {
     background-color: #343a40;
     color: #ffffff; }
 
-.alert {
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border: 1px solid transparent;
-  border-radius: 0.25rem; }
-  .alert-primary {
-    background-color: #17a2b8;
-    color: #ffffff;
-    border-color: #17a2b8; }
-  .alert-danger {
-    background-color: #dc3545;
-    color: #ffffff;
-    border-color: #dc3545; }
+.edit-profile .social-network-links .form-group {
+  display: flex;
+  gap: 1rem; }
+  .edit-profile .social-network-links .form-group input[type="text"] {
+    flex: 1; }
+  .edit-profile .social-network-links .form-group i {
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    line-height: 3rem; }
 
-.register .sign-up span {
-  margin-right: 0.2rem; }
+.edit-profile .social-network-links .form-group:nth-child(1) i {
+  color: #1da1f2; }
+
+.edit-profile .social-network-links .form-group:nth-child(2) i {
+  color: #1877f2; }
+
+.edit-profile .social-network-links .form-group:nth-child(3) i {
+  color: #ff0000; }
+
+.edit-profile .social-network-links .form-group:nth-child(4) i {
+  color: #0077b5; }
+
+.edit-profile .social-network-links .form-group:nth-child(5) i {
+  color: #c13584; }

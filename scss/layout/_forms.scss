@@ -1,38 +1,31 @@
-/* Start  Form */
+// Start Forms
 .form {
-
-    // .form .form-group
     #{&}-group {
-        margin: 1.2rem 0;
+        margin: 1rem 0;
 
         input[type="text"],
         input[type="email"],
         input[type="password"],
         input[type="date"],
-        textarea,
-        select {
+        select,
+        textarea {
             display: block;
             width: 100%;
             padding: 0.4rem;
             font-size: 1.2rem;
-            border: 1px solid #ccc;
-        }
-
-        input[type="submit"] {
-            line-height: 1.6;
+            border: 1px solid $border-color;
         }
 
         textarea {
             height: 8rem;
         }
+    }
 
-        // .form .form-text
-        #{&}-text {
-            display: block;
-            color: #888;
-            margin: 0.3rem 0;
-        }
+    #{&}-text {
+        display: block;
+        margin-top: 0.3rem;
+        color: $night-color;
     }
 }
 
-/* End Form */
+// End Forms

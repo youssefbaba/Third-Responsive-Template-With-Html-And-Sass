@@ -1,0 +1,134 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    @include setBackgroundColor($white-color)
+}
+
+button .input[type="submit"] {
+    line-height: 1.6 !important;
+}
+
+// Alignement Text
+.text {
+    &-center {
+        text-align: center;
+    }
+
+    &-left {
+        text-align: left;
+    }
+
+    &-right {
+        text-align: right;
+    }
+
+    &-primary {
+        color: $primary-color;
+    }
+}
+
+
+// Typography
+.lead {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+
+    @include medium {
+        font-size: 1.5rem;
+    }
+}
+
+.display-1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+
+    @include medium {
+        font-size: 4rem;
+    }
+}
+
+.display-2 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+
+    @include medium {
+        font-size: 3rem;
+    }
+}
+
+// Rounded Image
+.rounded {
+    border-radius: 50%;
+}
+
+// bcakground Colors 
+.bg {
+    &-light {
+        background-color: $light-color;
+        border: 1px solid $border-color;
+    }
+
+    &-dark {
+        background-color: $dark-color;
+    }
+
+    &-danger {
+        background-color: $danger-color;
+    }
+
+    &-primary {
+        background-color: $primary-color;
+    }
+
+    &-white {
+        background-color: $white-color;
+        border: 1px solid $border-color;
+    }
+}
+
+// Hiden Element In Small Device
+.hide-sm {
+    display: none;
+
+    @include medium {
+        display: revert;
+    }
+}
+
+// Margin Around elmenent
+@for $i from 1 through 4 {
+    .m-#{$i} {
+        margin: #{$i}rem;
+    }
+}
+
+// Padding Around elmenent
+@for $i from 1 through 4 {
+    .p-#{$i} {
+        padding: #{$i}rem;
+    }
+}
+
+// Margin Bottom/Top and Right/Left
+@for $i from 1 through 4 {
+    .mx-#{$i} {
+        margin: 0 #{$i}rem;
+    }
+
+    .my-#{$i} {
+        margin: #{$i}rem 0;
+    }
+}
+
+// Padding Bottom/Top and Right/Left
+@for $i from 1 through 4 {
+    .px-#{$i} {
+        padding: 0 #{$i}rem;
+    }
+
+    .py-#{$i} {
+        padding: #{$i}rem 0;
+    }
+}

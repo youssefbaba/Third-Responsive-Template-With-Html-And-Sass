@@ -1,43 +1,61 @@
-/* Start Dashboard */
+// Start Dashboard
+// .dashboard
 .dashboard {
-    .dash-buttons {
-        .btn {
-            display: block;
-            width: 100%;
 
-            @include minsmall {
-                display: inline-block;
-                width: auto;
-            }
+    // .dashboard .dashboard-content
+    #{&}-content {
 
-            &:not(:last-of-type) {
-                margin-bottom: 0.2rem;
+        // .dashboard .dashboard-content .buttons
+        .buttons {
 
-                @include minsmall {
-                    margin-bottom: 0;
+            // .dashboard .dashboard-content .buttons a
+            a {
+                display: block;
+
+                // .dashboard .dashboard-content .buttons a:not(:last-child)
+                &:not(:last-child) {
+                    margin-bottom: 0.5rem;
+
+                    @include medium {
+                        margin-bottom: 0;
+                    }
+                }
+
+                @include medium {
+                    display: inline-block;
                 }
             }
         }
-    }
 
-    .table {
-        width: 100%;
+        // .dashboard .dashboard-content .table
+        .table {
+            width: 100%;
 
-        @include minsmall {
-            width: auto;
-        }
+            @include medium {
+                width: auto;
+            }
 
-        tr {
-            td:last-child {
-                text-align: right;
+            // .dashboard .dashboard-content .table thead
+            thead {
+                border: none !important;
+            }
+
+            // .dashboard .dashboard-content .table th , .dashboard .dashboard-content .table td
+            th,
+            td {
+                padding: 1rem;
+            }
+
+            // .dashboard .dashboard-content .table th:last-child , .dashboard .dashboard-content .table td:last-child
+            td:last-child,
+            th:last-child {
+                @include medium {
+                    text-align: left;
+                }
             }
         }
 
-        th,
-        td {
-            padding: 1rem;
-        }
     }
 }
 
-/* End Dashboard */
+// End Dashboard

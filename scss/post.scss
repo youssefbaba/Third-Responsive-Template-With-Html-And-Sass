@@ -1,30 +1,34 @@
 // Import Variables
-@import '../scss/helpers/variables';
+@import "../scss/helpers/variables";
+// Import Colors
+@import "../scss/helpers/colors";
 // Import Functions
-@import '../scss/helpers/functions';
+@import "../scss/helpers/funtions";
 // Import Mixins
 @import "../scss/helpers/mixins";
 
 
-// Import Normalize
-@import '../scss/base/normalize';
-// Import base
-@import '../scss/base/bases';
+
+// Import Reset
+@import '../scss/base/reset';
+// Import Base
+@import '../scss/base/base';
 
 
-// Import Grids
-@import '../scss/layout/grid';
+
 // Import Header
 @import '../scss/layout/header';
+// Import Grid
+@import '../scss/layout/grid';
 // Import Forms
 @import '../scss/layout/forms';
 
 
-// Import Alert 
-@import "../scss/components/alerts";
-// Import Buttons
-@import '../scss/components/buttons';
+
+// Import Buttons 
+@import "../scss/components/buttons";
 
 
-// Import post page
-@import '../scss/pages/post';
+
+// Import  Post Page
+@import "../scss/pages/post";

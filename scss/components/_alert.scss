@@ -1,0 +1,19 @@
+// Start Alerts
+.alert {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+
+    &-primary {
+        @include setBackgroundColor($primary-color);
+        border-color: $primary-color;
+    }
+
+    &-danger {
+        @include setBackgroundColor($danger-color);
+        border-color: $danger-color;
+    }
+}
+
+// End Alerts

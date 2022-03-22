@@ -1,72 +1,40 @@
+// Start Buttons
 .btn {
     display: inline-block;
-    padding: 0.4rem 1.3rem;
-    border: none;
-    cursor: pointer;
+    color: $black-color;
+    background-color: transparent;
     font-size: 1rem;
-    margin-right: 0.5rem;
+    cursor: pointer;
+    border: none;
     outline: none;
-    @include transition(all 0.5s);
+    user-select: none;
+    padding: 0.4rem 1.3rem;
+    margin-right: 0.3rem;
+    @include transition(all 0.3s ease-in);
 
-    // .btn.btn-primary
-    &.btn-primary {
-        @include setBackgroundColor($primary-color);
-        @include transition(all 0.5s);
-
-        // .btn.btn-primary:hover
-        &:hover {
-            background-color: lighten($primary-color, 5%)
-        }
-    }
-
-    // .btn.btn-dark
-    &.btn-dark {
-        @include setBackgroundColor($dark-color);
-        @include transition(all 0.5s);
-
-        // .btn.btn-dark:hover
-        &:hover {
-            background-color: lighten($dark-color, 5%)
-        }
-    }
-
-    // .btn.btn-success
-    &.btn-success {
-        @include setBackgroundColor($success-color);
-        @include transition(all 0.5s);
-
-        // .btn.btn-success:hover
-        &:hover {
-            background-color: lighten($success-color, 5%)
-        }
-    }
-
-    // .btn.btn-danger
-    &.btn-danger {
-        @include setBackgroundColor($danger-color);
-        @include transition(all 0.5s);
-
-        // .btn.btn-danger:hover
-        &:hover {
-            background-color: lighten($danger-color, 5%)
-        }
-    }
-
-    // .btn.btn-light
-    &.btn-light {
+    &-light {
         @include setBackgroundColor($light-color);
-        @include transition(all 0.5s);
 
-        // .btn.btn-light:hover
         &:hover {
-            background-color: lighten($dark-color, 20);
-            color: $white-color;
+            @include setBackgroundColor($night-color);
         }
     }
 
-    // .btn:hover
-    &:hover {
-        background-color: lighten($dark-color, 20);
-        color: $white-color;
+    &-primary {
+        @include setBackgroundColor($primary-color);
+
+        &:hover {
+            background-color: lighten($primary-color, 5%);
+        }
+    }
+
+    &-danger {
+        @include setBackgroundColor($danger-color)
+    }
+
+    &-dark {
+        @include setBackgroundColor($dark-color)
     }
 }
+
+// End Buttons

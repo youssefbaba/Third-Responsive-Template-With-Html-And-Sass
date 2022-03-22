@@ -1,24 +1,51 @@
-/* Start Post */
+// Start Post
 // .post
 .post {
-    #{&}-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
 
-        @include minsmall {
-            flex-direction: row;
+    // .post .post-content
+    #{&}-content {
+        .say {
+            @include setBackgroundColor($primary-color);
+            padding: 0.5rem 1rem;
+            margin-bottom: 1rem;
+        }
+
+        // .post .post-content-item
+        &-item {
+            display: flex;
+            flex-direction: column;
             gap: 2rem;
-        }
 
-        .image-link {
-            flex-basis: 150px;
-        }
+            @include medium {
+                flex-direction: row;
+                align-items: center;
+            }
 
-        .text {
-            flex: 1;
+            // .post .post-content-item .image
+            .image {
+                @include medium {
+                    flex-basis: 150px;
+                }
+
+                // .post .post-content-item .image .link
+                .link {
+                    display: block;
+                }
+            }
+
+            // .post .post-content-item .text
+            .text {
+                @include medium {
+                    flex: 1;
+                }
+            }
+
+            // .post .post-content-item:not(:last-child)
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
         }
     }
 }
 
-/* End Post */
+// End Post

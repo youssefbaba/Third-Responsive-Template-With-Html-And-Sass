@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Education Page</title>
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="css/addEducation.css">
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Start Header  -->
+    <header class="header text-center">
+        <h1 class="logo">
+            <a href="dashboard.html">
+                <i class="fa-solid fa-code"></i>
+                <span>DevConnector</span>
+            </a>
+        </h1>
+        <nav class="navbar">
+            <ul class="links">
+                <li>
+                    <a href="profiles.html">Developers</a>
+                </li>
+                <li>
+                    <a href="posts.html">Posts</a>
+                </li>
+                <li>
+                    <a href="dashboard.html">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="hide-sm">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span class="hide-sm">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- End Header  -->
+    <!-- Start Add Education -->
+    <div class="add-education">
+        <div class="container">
+            <div class="title-section">
+                <h2 class="display-2 text-primary">Add Your Education</h2>
+                <p class="lead">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span>Add any school, bootcamp, etc that you have attended</span>
+                </p>
+            </div>
+            <div class="add-education-content">
+                <form action="" class="form">
+                    <div class="form-group">
+                        <small class="form-text">* = required fields</small>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="shool-bootcamp" placeholder="* Shool Or Bootcamp" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="degree-certificate" placeholder="* Degree Or Certificate" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="study-field" placeholder="Study Of Field">
+                    </div>
+                    <div class="form-group">
+                        <label for="from-date">From Date : </label>
+                        <input type="date" name="from-date" id="from-date">
+                    </div>
+                    <div class="form-group">
+                        <label for="to-date">To Date : </label>
+                        <input type="date" name="to-date" id="to-date">
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" name="current-shool" id="current-shool" value="Current shool">
+                        <label for="current-shool">Current Shool</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="program-description" placeholder="Program Description"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Submit" class="btn btn-primary">
+                        <a href="dashboard.html" class="btn btn-light">Go Back</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End Add Education -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -6,30 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Posts Page</title>
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="css/posts.css">
     <!-- Font Awesome  -->
     <link rel="stylesheet" href="css/all.min.css">
-    <!-- Google Fonts -->
+    <!-- Google Font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <!-- Main StyleSheet  -->
-    <link rel="stylesheet" href="css/posts.css">
 </head>
 
 <body>
-    <!-- Start Header -->
-    <header>
-        <nav class="navbar bg-dark text-center">
-            <h1>
-                <a href="dashboard.html">
-                    <i class="fa-solid fa-code"></i>
-                    DevConnector
-                </a>
-            </h1>
-            <ul>
-                <li><a href="profiles.html">Developers</a></li>
-                <li><a href="posts.html">Posts</a></li>
+    <!-- Start Header  -->
+    <header class="header text-center">
+        <h1 class="logo">
+            <a href="dashboard.html">
+                <i class="fa-solid fa-code"></i>
+                <span>DevConnector</span>
+            </a>
+        </h1>
+        <nav class="navbar">
+            <ul class="links">
+                <li>
+                    <a href="profiles.html">Developers</a>
+                </li>
+                <li>
+                    <a href="posts.html">Posts</a>
+                </li>
                 <li>
                     <a href="dashboard.html">
                         <i class="fa-solid fa-user"></i>
@@ -45,61 +49,78 @@
             </ul>
         </nav>
     </header>
-    <!-- End Header -->
+    <!-- End Header  -->
     <!-- Start Posts -->
     <div class="posts">
         <div class="container">
-            <h2 class="large text-primary">Posts</h2>
-            <p class="lead"><i class="fa-solid fa-user"></i>Welcome to the community</p>
-            <div class="alert alert-primary">Say Something...</div>
-            <form action="" class="form">
-                <div class="form-group">
-                    <textarea name="post" placeholder="Create a post"></textarea>
-                </div>
-                <div class="form-group">
-                    <input type="submit" value="Submit" class="btn btn-dark">
-                </div>
-            </form>
-            <div class="posts-items">
-                <div class="posts-item bg-white my-1 p-1">
-                    <div class="image-link text-center">
-                        <a href="profile.html">
-                            <img src="images/avatar.png" alt="avatar" class="rounded-img">
-                            <h4 class="text-primary">John Doe</h4>
-                        </a>
+            <div class="title-section">
+                <h2 class="display-2 text-primary">Posts</h2>
+                <p class="lead">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Welcome to the community</span>
+                </p>
+            </div>
+            <div class="posts-content">
+                <h3 class="say">Say Something...</h3>
+                <form action="" class="form">
+                    <div class="form-group">
+                        <textarea name="post" placeholder="Create a post"></textarea>
                     </div>
-                    <div class="text">
-                        <p class="my-1">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis mollitia corporis qui
-                            error, maiores suscipit ea quisquam architecto dicta sint ipsa reprehenderit illum fugit
-                            quis iste obcaecati numquam alias fuga! Laboriosam sed id sunt ullam, blanditiis iste
-                            officia perferendis inventore.
-                        </p>
-                        <div>
-                            <button class="btn btn-light"><i class="fa-solid fa-thumbs-up"></i> <span>4</span></button>
-                            <button class="btn btn-light"><i class="fa-solid fa-thumbs-down"></i></button>
-                            <a href="post.html" class="btn btn-primary">Discussion</a>
+                    <div class="form-group">
+                        <input type="submit" value="Submit" class="btn btn-dark">
+                    </div>
+                </form>
+                <div class="posts-content-items py-1">
+                    <div class="posts-content-item bg-white p-1">
+                        <div class="image  text-center">
+                            <a href="profile.html" class="link">
+                                <img src="images/profiles/profile_01.jpg" alt="person1" class="rounded">
+                                <h4 class="text-primary">John Doe</h4>
+                            </a>
+                        </div>
+                        <div class="text">
+                            <p class="my-1">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione dolores officia
+                                assumenda dolor maiores sint pariatur quia voluptatibus voluptate perspiciatis commodi
+                                possimus nemo aut, voluptas expedita facilis amet hic culpa.
+                            </p>
+                            <div>
+                                <button class="btn btn-light">
+                                    <i class="fa-solid fa-thumbs-up"></i>
+                                    <span>4</span>
+                                </button>
+                                <button class="btn btn-light">
+                                    <i class="fa-solid fa-thumbs-down"></i>
+                                    <span>1</span>
+                                </button>
+                                <a href="post.html" class="btn btn-primary">Discussion</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="posts-item bg-white my-1 p-1">
-                    <div class="image-link text-center">
-                        <a href="profile.html">
-                            <img src="images/avatar.png" alt="avatar" class="rounded-img">
-                            <h4 class="text-primary">John Doe</h4>
-                        </a>
-                    </div>
-                    <div class="text">
-                        <p class="my-1">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque, ipsum doloribus
-                            doloremque dolores eius nobis quae quisquam consequatur maiores recusandae excepturi
-                            consectetur, molestias officia ad dignissimos quo commodi vel ea cum maxime sunt. Ullam iste
-                            quaerat consequatur itaque deleniti.
-                        </p>
-                        <div>
-                            <button class="btn btn-light"><i class="fa-solid fa-thumbs-up"></i> <span>4</span></button>
-                            <button class="btn btn-light"><i class="fa-solid fa-thumbs-down"></i></button>
-                            <a href="post.html" class="btn btn-primary">Discussion</a>
+                    <div class="posts-content-item bg-white p-1">
+                        <div class="image  text-center">
+                            <a href="profile.html" class="link">
+                                <img src="images/profiles/profile_01.jpg" alt="person1" class="rounded">
+                                <h4 class="text-primary">John Doe</h4>
+                            </a>
+                        </div>
+                        <div class="text">
+                            <p class="my-1">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione dolores officia
+                                assumenda dolor maiores sint pariatur quia voluptatibus voluptate perspiciatis commodi
+                                possimus nemo aut, voluptas expedita facilis amet hic culpa.
+                            </p>
+                            <div>
+                                <button class="btn btn-light">
+                                    <i class="fa-solid fa-thumbs-up"></i>
+                                    <span>3</span>
+                                </button>
+                                <button class="btn btn-light">
+                                    <i class="fa-solid fa-thumbs-down"></i>
+                                    <span>0</span>
+                                </button>
+                                <a href="post.html" class="btn btn-primary">Discussion</a>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,29 +1,58 @@
-/* Start Posts */
-// .posts 
+// Start Posts
+// .posts
 .posts {
 
-    // .posts .posts-item
-    #{&}-item {
+    // .posts .posts-content
+    #{&}-content {
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        // .posts .posts-content .say
+        .say {
+            @include setBackgroundColor($primary-color);
+            padding: 0.5rem 1rem;
+            margin-bottom: 1rem;
+        }
 
-        @include minsmall {
-            flex-direction: row;
+        // .posts .posts-content-item
+        &-item {
+            display: flex;
+            flex-direction: column;
             gap: 2rem;
-        }
 
-        // .posts .posts-item .image-link
-        .image-link {
-            flex-basis: 150px;
-        }
+            @include medium {
+                flex-direction: row;
+                align-items: center;
+            }
 
-        // .posts .posts-item .text
-        .text {
-            flex: 1;
+            // .posts .posts-content-item .image
+            .image {
+                @include medium {
+                    flex-basis: 150px;
+                }
+
+                // .posts .posts-content-item .image .link
+                .link {
+                    display: block;
+                }
+            }
+
+            // .posts .posts-content-item .text
+            .text {
+                @include medium {
+                    flex: 1;
+                }
+
+                // .posts .posts-content-item .text button
+                button {
+                    line-height: 1.6;
+                }
+            }
+
+            // .posts .posts-content-item:not(:last-child)
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
         }
     }
 }
 
-/* End Posts */
+// End Posts

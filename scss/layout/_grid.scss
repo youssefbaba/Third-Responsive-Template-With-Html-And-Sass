@@ -1,25 +1,26 @@
-// Start Container
 .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
 
     margin: auto {
         top: 8rem;
-        bottom: 3rem;
+        bottom: 2rem;
     }
 
-    @include minsmall {
+    @include small {
+        width: 540px;
+    }
+
+    @include medium {
         width: 720px;
         margin-top: 6rem;
     }
 
-    @include minmedium {
+    @include large {
         width: 960px;
     }
 
-    @include minlarg {
+    @include extraLarge {
         width: 1140px;
     }
 }
-
-// End Container

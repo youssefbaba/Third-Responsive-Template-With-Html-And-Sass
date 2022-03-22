@@ -1,0 +1,26 @@
+// Start Badges
+.badge {
+    display: inline-block;
+    padding: 0.35rem 0.65rem;
+    font-size: 0.8rem;
+    text-align: center;
+    white-space: nowrap;
+
+    &-light {
+        @include setBackgroundColor($light-color);
+    }
+
+    &-dark {
+        @include setBackgroundColor($dark-color);
+    }
+
+    &-primary {
+        @include setBackgroundColor($primary-color);
+    }
+
+    &-danger {
+        @include setBackgroundColor($danger-color);
+    }
+}
+
+// End Badges 

@@ -1,50 +1,50 @@
-/* Start Header */
-header {
+//Start Header 
+// .header
+.header {
+    @include setBackgroundColor($dark-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+    padding: 0.7rem 2rem;
+    @include opacity(0.9);
+    border-bottom: 1px solid $primary-color;
 
-    // header .navbar
-    .navbar {
-        padding: 0.7rem 2rem;
-        position: fixed;
-        z-index: 2;
-        width: 100%;
-        top: 0;
-        border-bottom: 1px solid $primary-color;
-        @include opacity(0.9);
+    @include medium {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
-        @include minsmall {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            text-align: left;
+    // .header a
+    a {
+        @include setBackgroundColor($dark-color);
+        @include transition(color 0.3s ease-in);
+
+        // .header a:hover
+        &:hover {
+            color: $primary-color;
         }
+    }
 
-        h1 {
-            margin-bottom: 1rem;
+    // .header .links
+    .links {
+        display: flex;
+        align-items: center;
 
-            @include minsmall {
-                margin-bottom: 0;
-            }
-        }
-
-        // header .navbar ul
-        ul {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        // header .navbar a
+        // .header .links a
         a {
-            color: $white-color;
-            padding: 0.45rem 0.7rem;
-            @include transition(color 0.5s);
+            display: block;
+            padding: 0.5rem 1rem;
+        }
 
-            // header .navbar a:hover
-            &:hover {
-                color: $primary-color;
-            }
+        // .header .links span
+        span {
+            margin-left: 0.3rem;
         }
     }
 }
 
-/* End Header */
+//End Header 

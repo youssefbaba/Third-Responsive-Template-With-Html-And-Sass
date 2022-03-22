@@ -1,12 +1,5 @@
-$primary-color:#17a2b8;
-$dark-color:#343a48;
-$light-color:#f4f4f4;
-$danger-color:#dc3545;
-$success-color:#28a745;
-$white-color:#fff;
-$black-color:#333;
-$max-mobile:"(max-width: 767px)";
-$min-small:"(min-width: 768px)";
-$min-medium:"(min-width: 992px)";
-$min-large:"(min-width: 1200px)";
-$colors: (1:#1da1f2, 2:#1877f2, 3:#ff0000, 4:#0077b5, 5:#c13584);
+$small:"(min-width: 576px)";
+$medium:"(min-width: 768px)";
+$large:"(min-width: 992px)";
+$extra-large:"(min-width: 1200px)";
+$colors:(1:#1da1f2, 2:#1877f2, 3:#ff0000, 4:#0077b5, 5:#c13584);

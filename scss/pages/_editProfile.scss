@@ -1,0 +1,38 @@
+// Start Edit Profile
+// .edit-profile
+.edit-profile {
+
+    // .edit-profile .social-network-links
+    .social-network-links {
+
+        // .edit-profile .social-network-links .form-group
+        .form-group {
+            display: flex;
+            gap: 1rem;
+
+            // .edit-profile .social-network-links .form-group input[type="text"]
+            input[type="text"] {
+                flex: 1;
+            }
+
+            // .edit-profile .social-network-links .form-group i
+            i {
+                width: 3rem;
+                height: 3rem;
+                text-align: center;
+                line-height: 3rem;
+            }
+        }
+
+        @each $amount,
+        $color in $colors {
+            .form-group:nth-child(#{$amount}) {
+                i {
+                    color: $color;
+                }
+            }
+        }
+    }
+}
+
+// End Edit Profile

@@ -6,62 +6,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Page</title>
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="css/register.css">
     <!-- Font Awesome  -->
     <link rel="stylesheet" href="css/all.min.css">
-    <!-- Google Fonts -->
+    <!-- Google Font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <!-- Main StyleSheet  -->
-    <link rel="stylesheet" href="css/register.css">
 </head>
 
 <body>
-    <!-- Start Header -->
-    <header>
-        <nav class="navbar bg-dark text-center">
-            <h1>
-                <a href="dashboard.html">
-                    <i class="fa-solid fa-code"></i>
-                    DevConnector
-                </a>
-            </h1>
-            <ul>
+    <!-- Start Header  -->
+    <header class="header text-center">
+        <h1 class="logo">
+            <a href="dashboard.html">
+                <i class="fa-solid fa-code"></i>
+                <span>DevConnector</span>
+            </a>
+        </h1>
+        <nav class="navbar">
+            <ul class="links">
                 <li><a href="profiles.html">Developers</a></li>
                 <li><a href="register.html">Register</a></li>
                 <li><a href="login.html">Login</a></li>
             </ul>
         </nav>
     </header>
-    <!-- End Header -->
+    <!-- End Header  -->
     <!-- Start Register -->
     <div class="register">
         <div class="container">
-            <h2 class="large text-primary">Sign Up</h2>
-            <p class="lead"><i class="fa-solid fa-user"></i> Create Your Account</p>
-            <form action="dashboard.html" class="form">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Name">
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Address Email">
-                    <small class="form-text">
-                        This site uses Gravatar, so if you want a profile
-                        image, use a Gravatar email
-                    </small>
-                </div>
-                <div class="form-group">
-                    <input type="password" name="password" placeholder="Password">
-                </div>
-                <div class="form-group">
-                    <input type="password" name="password" placeholder=" Confirm Password">
-                </div>
-                <div class="form-group">
-                    <input type="submit" value="Register" class="btn btn-primary">
-                </div>
-            </form>
-            <p>Already have an account? <a href="login.html" class="text-primary">Sign In</a></p>
+            <div class="title-section">
+                <h2 class="display-2 text-primary">Sign Up</h2>
+                <p class="lead">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Create Your Account</span>
+                </p>
+            </div>
+            <div class="register-content">
+                <form action="" class="form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email Address">
+                        <small class="form-text">
+                            This site uses Gravatar, so if you want a profile image, use a Gravatar email
+                        </small>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" placeholder="Confirm Password">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Register" class="btn btn-primary">
+                    </div>
+                </form>
+                <p class="sign-in">
+                    <span>Already have an account?</span>
+                    <a href="login.html" class="text-primary">Sign In</a>
+                </p>
+            </div>
         </div>
     </div>
     <!-- End Register -->

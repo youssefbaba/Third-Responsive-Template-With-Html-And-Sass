@@ -274,20 +274,3 @@ button .input[type="submit"] {
   .btn-dark {
     background-color: #343a40;
     color: #ffffff; }
-
-.alert {
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border: 1px solid transparent;
-  border-radius: 0.25rem; }
-  .alert-primary {
-    background-color: #17a2b8;
-    color: #ffffff;
-    border-color: #17a2b8; }
-  .alert-danger {
-    background-color: #dc3545;
-    color: #ffffff;
-    border-color: #dc3545; }
-
-.register .sign-up span {
-  margin-right: 0.2rem; }
