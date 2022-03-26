@@ -274,3 +274,8 @@ button .input[type="submit"] {
   .btn-dark {
     background-color: #343a40;
     color: #ffffff; }
+
+.register .sign-in span {
+  margin-right: 0.2rem; }
+
+/*# sourceMappingURL=register.css.map */

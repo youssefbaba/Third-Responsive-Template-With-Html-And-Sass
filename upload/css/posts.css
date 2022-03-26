@@ -275,5 +275,31 @@ button .input[type="submit"] {
     background-color: #343a40;
     color: #ffffff; }
 
-.register .sign-in span {
-  margin-right: 0.2rem; }
+.posts .posts-content .say {
+  background-color: #17a2b8;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem; }
+
+.posts .posts-content-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; }
+  @media (min-width: 768px) {
+    .posts .posts-content-item {
+      flex-direction: row;
+      align-items: center; } }
+  @media (min-width: 768px) {
+    .posts .posts-content-item .image {
+      flex-basis: 150px; } }
+  .posts .posts-content-item .image .link {
+    display: block; }
+  @media (min-width: 768px) {
+    .posts .posts-content-item .text {
+      flex: 1; } }
+  .posts .posts-content-item .text button {
+    line-height: 1.6; }
+  .posts .posts-content-item:not(:last-child) {
+    margin-bottom: 1rem; }
+
+/*# sourceMappingURL=posts.css.map */

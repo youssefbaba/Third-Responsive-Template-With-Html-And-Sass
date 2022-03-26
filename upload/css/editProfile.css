@@ -220,6 +220,27 @@ button .input[type="submit"] {
     .container {
       width: 1140px; } }
 
+.form .form-group {
+  margin: 1rem 0; }
+  .form .form-group input[type="text"],
+  .form .form-group input[type="email"],
+  .form .form-group input[type="password"],
+  .form .form-group input[type="date"],
+  .form .form-group select,
+  .form .form-group textarea {
+    display: block;
+    width: 100%;
+    padding: 0.4rem;
+    font-size: 1.2rem;
+    border: 1px solid #ccc; }
+  .form .form-group textarea {
+    height: 8rem; }
+
+.form .form-text {
+  display: block;
+  margin-top: 0.3rem;
+  color: #626d78; }
+
 .btn {
   display: inline-block;
   color: #333333;
@@ -254,28 +275,30 @@ button .input[type="submit"] {
     background-color: #343a40;
     color: #ffffff; }
 
-.dashboard .dashboard-content .buttons a {
-  display: block; }
-  .dashboard .dashboard-content .buttons a:not(:last-child) {
-    margin-bottom: 0.5rem; }
-    @media (min-width: 768px) {
-      .dashboard .dashboard-content .buttons a:not(:last-child) {
-        margin-bottom: 0; } }
-  @media (min-width: 768px) {
-    .dashboard .dashboard-content .buttons a {
-      display: inline-block; } }
+.edit-profile .social-network-links .form-group {
+  display: flex;
+  gap: 1rem; }
+  .edit-profile .social-network-links .form-group input[type="text"] {
+    flex: 1; }
+  .edit-profile .social-network-links .form-group i {
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    line-height: 3rem; }
 
-.dashboard .dashboard-content .table {
-  width: 100%; }
-  @media (min-width: 768px) {
-    .dashboard .dashboard-content .table {
-      width: auto; } }
-  .dashboard .dashboard-content .table thead {
-    border: none !important; }
-  .dashboard .dashboard-content .table th,
-  .dashboard .dashboard-content .table td {
-    padding: 1rem; }
-  @media (min-width: 768px) {
-    .dashboard .dashboard-content .table td:last-child,
-    .dashboard .dashboard-content .table th:last-child {
-      text-align: left; } }
+.edit-profile .social-network-links .form-group:nth-child(1) i {
+  color: #1da1f2; }
+
+.edit-profile .social-network-links .form-group:nth-child(2) i {
+  color: #1877f2; }
+
+.edit-profile .social-network-links .form-group:nth-child(3) i {
+  color: #ff0000; }
+
+.edit-profile .social-network-links .form-group:nth-child(4) i {
+  color: #0077b5; }
+
+.edit-profile .social-network-links .form-group:nth-child(5) i {
+  color: #c13584; }
+
+/*# sourceMappingURL=editProfile.css.map */

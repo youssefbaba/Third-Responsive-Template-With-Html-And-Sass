@@ -220,6 +220,27 @@ button .input[type="submit"] {
     .container {
       width: 1140px; } }
 
+.form .form-group {
+  margin: 1rem 0; }
+  .form .form-group input[type="text"],
+  .form .form-group input[type="email"],
+  .form .form-group input[type="password"],
+  .form .form-group input[type="date"],
+  .form .form-group select,
+  .form .form-group textarea {
+    display: block;
+    width: 100%;
+    padding: 0.4rem;
+    font-size: 1.2rem;
+    border: 1px solid #ccc; }
+  .form .form-group textarea {
+    height: 8rem; }
+
+.form .form-text {
+  display: block;
+  margin-top: 0.3rem;
+  color: #626d78; }
+
 .btn {
   display: inline-block;
   color: #333333;
@@ -254,24 +275,29 @@ button .input[type="submit"] {
     background-color: #343a40;
     color: #ffffff; }
 
-.landing {
-  height: 100vh;
-  position: relative;
-  display: flex;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.7);
+.post .post-content .say {
+  background-color: #17a2b8;
   color: #ffffff;
-  background-image: url("../../images/landing/landing.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover; }
-  .landing::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); }
-  .landing .landing-content {
-    position: relative; }
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem; }
+
+.post .post-content-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; }
+  @media (min-width: 768px) {
+    .post .post-content-item {
+      flex-direction: row;
+      align-items: center; } }
+  @media (min-width: 768px) {
+    .post .post-content-item .image {
+      flex-basis: 150px; } }
+  .post .post-content-item .image .link {
+    display: block; }
+  @media (min-width: 768px) {
+    .post .post-content-item .text {
+      flex: 1; } }
+  .post .post-content-item:not(:last-child) {
+    margin-bottom: 1rem; }
+
+/*# sourceMappingURL=post.css.map */

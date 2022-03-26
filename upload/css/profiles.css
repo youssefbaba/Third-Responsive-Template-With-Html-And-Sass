@@ -220,27 +220,6 @@ button .input[type="submit"] {
     .container {
       width: 1140px; } }
 
-.form .form-group {
-  margin: 1rem 0; }
-  .form .form-group input[type="text"],
-  .form .form-group input[type="email"],
-  .form .form-group input[type="password"],
-  .form .form-group input[type="date"],
-  .form .form-group select,
-  .form .form-group textarea {
-    display: block;
-    width: 100%;
-    padding: 0.4rem;
-    font-size: 1.2rem;
-    border: 1px solid #ccc; }
-  .form .form-group textarea {
-    height: 8rem; }
-
-.form .form-text {
-  display: block;
-  margin-top: 0.3rem;
-  color: #626d78; }
-
 .btn {
   display: inline-block;
   color: #333333;
@@ -274,3 +253,39 @@ button .input[type="submit"] {
   .btn-dark {
     background-color: #343a40;
     color: #ffffff; }
+
+.profiles .profiles-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  line-height: 1.8;
+  border: 1px solid #ccc; }
+  @media (min-width: 768px) {
+    .profiles .profiles-item {
+      flex-direction: row;
+      text-align: left;
+      gap: 3rem; } }
+  @media (min-width: 768px) {
+    .profiles .profiles-item .image {
+      flex-basis: 150px; } }
+  .profiles .profiles-item .image img {
+    display: block;
+    width: 100%;
+    height: 100%; }
+  @media (min-width: 768px) {
+    .profiles .profiles-item .info {
+      flex: 2; } }
+  .profiles .profiles-item .skills {
+    display: none; }
+    @media (min-width: 768px) {
+      .profiles .profiles-item .skills {
+        display: block;
+        flex: 1; } }
+    .profiles .profiles-item .skills span {
+      margin-left: 0.3rem; }
+  .profiles .profiles-item:not(:last-child) {
+    margin-bottom: 1rem; }
+
+/*# sourceMappingURL=profiles.css.map */

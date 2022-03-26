@@ -1,10 +1,10 @@
 {
-  "name": "third-responsive-template-with-html-and-sass-version-02",
+  "name": "third-responsive-template-with-html-and-sass",
   "version": "1.0.0",
   "description": "Fourth-Responsive-Template-With-Html-And-Sass",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass --recursive --watch scss/ --output css/"
+    "sass": "node-sass --recursive --watch  --source-map true --source-map-contents true  scss/ --output upload/css"
   },
   "repository": {
     "type": "git",
