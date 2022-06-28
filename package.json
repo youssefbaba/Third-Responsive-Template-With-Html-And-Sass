@@ -4,7 +4,7 @@
   "description": "Fourth-Responsive-Template-With-Html-And-Sass",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass --recursive --watch  --source-map true --source-map-contents true  scss/ --output upload/css"
+    "sass": "sass --watch scss:upload/css"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/youssefbaba/Third-Responsive-Template-With-Html-And-Sass#readme",
   "devDependencies": {
-    "node-sass": "^7.0.1"
+
   }
 }
